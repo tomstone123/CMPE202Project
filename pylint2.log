@@ -1,0 +1,9 @@
+************* Module tlv_parser
+tlv_parser.py:142:0: C0301: Line too long (113/100) (line-too-long)
+tlv_parser.py:66:0: R0914: Too many local variables (20/15) (too-many-locals)
+tlv_parser.py:66:0: R0912: Too many branches (15/12) (too-many-branches)
+tlv_parser.py:66:0: R0915: Too many statements (94/50) (too-many-statements)
+
+------------------------------------------------------------------
+Your code has been rated at 9.64/10 (previous run: 9.64/10, +0.00)
+

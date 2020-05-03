@@ -1,0 +1,25 @@
+Run started:2020-05-01 00:20:16.632822
+Files in scope (1):
+	Parser.py (score: {SEVERITY: 0, CONFIDENCE: 0})
+Files excluded (1):
+	output.txt
+
+Test results:
+	No issues identified.
+
+Code scanned:
+	Total lines of code: 179
+	Total lines skipped (#nosec): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0.0
+		Low: 0.0
+		Medium: 0.0
+		High: 0.0
+	Total issues (by confidence):
+		Undefined: 0.0
+		Low: 0.0
+		Medium: 0.0
+		High: 0.0
+Files skipped (0):

@@ -1,0 +1,108 @@
+Unhandled exception: page fault on read access to 0x0202d4a1 in 32-bit code (0x7e8a2c02).
+Register dump:
+ CS:0023 SS:002b DS:002b ES:002b FS:0063 GS:006b
+ EIP:7e8a2c02 ESP:002e6fd0 EBP:002e7038 EFLAGS:00010202(  R- --  I   - - - )
+ EAX:00000003 EBX:002e7668 ECX:002e708b EDX:002e7070
+ ESI:0202d4a1 EDI:002e7078
+Stack dump:
+0x002e6fd0:  00000000 002e7078 002e708c 002e708b
+0x002e6fe0:  342e7210 7e8c43a8 00000000 00000004
+0x002e6ff0:  0000000a 00000000 00000004 00000000
+0x002e7000:  7bd6d214 002e70a0 39323234 00000031
+0x002e7010:  00000000 00000000 002e7040 651cf600
+0x002e7020:  00000045 ffffffff 002e71e8 002e7668
+Backtrace:
+=>0 0x7e8a2c02 SetUserObjectSecurity+0x222() in user32 (0x002e7038)
+  1 0x7e8a3125 SetUserObjectSecurity+0x744() in user32 (0x002e71e8)
+  2 0x7e8a4948 wvsprintfA+0x17() in user32 (0x002e71f4)
+  3 0x0040113b EntryPoint+0xffffffff() in scfparser (0x002e7658)
+  4 0x00401d0e EntryPoint+0xffffffff() in scfparser (0x002e77a4)
+  5 0x00402b32 EntryPoint+0xffffffff() in scfparser (0x0032fee0)
+  6 0x004087f9 in scfparser (+0x87f8) (0x0032ff20)
+  7 0x7b453b39 call_process_entry+0x18() in kernel32 (0x0032ff48)
+  8 0x7b454003 start_process+0x132() in kernel32 (0x0032ffd8)
+  9 0x7b453b4a __wine_start_process+0x9() in kernel32 (0x0032ffec)
+0x7e8a2c02 SetUserObjectSecurity+0x222 in user32: movzbl	0x0(%esi),%eax
+Modules:
+Module	Address			Debug info	Name (41 modules)
+PE	  400000-  433000	Export          scfparser
+PE	10000000-100db000	Deferred        libeay32
+PE	65980000-6599d000	Deferred        version
+PE	6a900000-6aacf000	Deferred        setupapi
+PE	6c0c0000-6c106000	Deferred        imm32
+PE	6c2c0000-6c2e6000	Deferred        wsock32
+PE	6fdc0000-6fff0000	Deferred        rpcrt4
+PE	7b000000-7b2f3000	Deferred        kernelbase
+ELF	7b400000-7b66f000	Dwarf           kernel32<elf>
+  \-PE	7b420000-7b66f000	\               kernel32
+ELF	7bc00000-7bd91000	Deferred        ntdll<elf>
+  \-PE	7bc30000-7bd91000	\               ntdll
+ELF	7c000000-7c005000	Deferred        <wine-loader>
+ELF	7e2e2000-7e30d000	Deferred        libtinfo.so.6
+ELF	7e30d000-7e33d000	Deferred        libncurses.so.6
+ELF	7e37f000-7e459000	Deferred        msvcrt<elf>
+  \-PE	7e3a0000-7e459000	\               msvcrt
+ELF	7e459000-7e497000	Deferred        ws2_32<elf>
+  \-PE	7e470000-7e497000	\               ws2_32
+ELF	7e497000-7e4c6000	Deferred        iphlpapi<elf>
+  \-PE	7e4a0000-7e4c6000	\               iphlpapi
+ELF	7e4c6000-7e621000	Deferred        gdi32<elf>
+  \-PE	7e4f0000-7e621000	\               gdi32
+ELF	7e621000-7e741000	Deferred        ucrtbase<elf>
+  \-PE	7e660000-7e741000	\               ucrtbase
+ELF	7e741000-7e7c5000	Deferred        advapi32<elf>
+  \-PE	7e760000-7e7c5000	\               advapi32
+ELF	7e7c5000-7ea0b000	Dwarf           user32<elf>
+  \-PE	7e800000-7ea0b000	\               user32
+ELF	7eed7000-7eeec000	Deferred        libnss_files.so.2
+ELF	7eeec000-7efbe000	Deferred        libm.so.6
+ELF	7efd1000-7efea000	Deferred        libresolv.so.2
+ELF	7efea000-7f000000	Deferred        wow64cpu<elf>
+  \-PE	7eff0000-7f000000	\               wow64cpu
+ELF	f7b93000-f7b9e000	Deferred        librt.so.1
+ELF	f7ba0000-f7ba6000	Deferred        libdl.so.2
+ELF	f7ba6000-f7d56000	Deferred        libc.so.6
+ELF	f7d56000-f7d79000	Deferred        libpthread.so.0
+ELF	f7f18000-f7f20000	Deferred        libnss_dns.so.2
+ELF	f7f50000-f7f56000	Deferred        libnss_mdns4_minimal.so.2
+ELF	f7f58000-f7f84000	Deferred        ld-linux.so.2
+Threads:
+process  tid      prio (all id:s are in hex)
+0000000e services.exe
+	00000023    0
+	0000001c    0
+	00000015    0
+	00000010    0
+	0000000f    0
+00000011 plugplay.exe
+	00000019    0
+	00000018    0
+	00000012    0
+0000001a winedevice.exe
+	00000020    0
+	0000001f    0
+	0000001e    0
+	0000001d    0
+	0000001b    0
+00000021 winedevice.exe
+	00000026    0
+	00000025    0
+	00000024    0
+	00000022    0
+00000094 (D) Z:\home\jlerman\Storage\Documents\Education\University\SanJoseStateUniversity\classes\MSSE\2020\Spring\CMPE202\Project\SCFProgram\fuzz-env\SCFParser.exe
+	["Z:\home\jlerman\Storage\Documents\Education\University\SanJoseStateUniversity\classes\MSSE\2020\Spring\CMPE202\Project\SCFProgram\fuzz-env\SCFParser.exe" -]
+	00000098    0
+	00000099    0 <==
+0000009d explorer.exe
+	000000a1    0
+	0000009c    0
+	0000009f    0
+	0000009a    0
+000000a3 explorer.exe
+	000000a0    0
+System information:
+    Wine build: wine-5.5 (Staging)
+    Platform: i386 (WOW64)
+    Version: Windows 7
+    Host system: Linux
+    Host version: 5.5.16-200.fc31.x86_64

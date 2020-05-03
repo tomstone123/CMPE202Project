@@ -1,0 +1,53 @@
+************* Module Parser
+Parser.py:77:0: C0303: Trailing whitespace (trailing-whitespace)
+Parser.py:78:22: C0303: Trailing whitespace (trailing-whitespace)
+Parser.py:85:0: C0301: Line too long (109/100) (line-too-long)
+Parser.py:88:0: C0303: Trailing whitespace (trailing-whitespace)
+Parser.py:90:0: W0311: Bad indentation. Found 19 spaces, expected 20 (bad-indentation)
+Parser.py:93:0: C0303: Trailing whitespace (trailing-whitespace)
+Parser.py:94:0: C0301: Line too long (129/100) (line-too-long)
+Parser.py:106:0: C0301: Line too long (103/100) (line-too-long)
+Parser.py:107:0: C0330: Wrong continued indentation (add 13 spaces).
+                                                               len(data_dict[field]),
+                                                               ^            | (bad-continuation)
+Parser.py:108:0: C0330: Wrong continued indentation (add 13 spaces).
+                                                               ver_maj, ver_min))
+                                                               ^            | (bad-continuation)
+Parser.py:114:0: C0301: Line too long (119/100) (line-too-long)
+Parser.py:118:0: C0301: Line too long (102/100) (line-too-long)
+Parser.py:122:0: C0303: Trailing whitespace (trailing-whitespace)
+Parser.py:123:0: C0301: Line too long (104/100) (line-too-long)
+Parser.py:124:0: C0330: Wrong continued indentation (add 13 spaces).
+                                                                len(data_dict[field]), String1))
+                                                                ^            | (bad-continuation)
+Parser.py:126:0: C0301: Line too long (109/100) (line-too-long)
+Parser.py:127:0: C0330: Wrong continued indentation (add 13 spaces).
+                                                                byteslist_to_int(data_dict[field])))
+                                                                ^            | (bad-continuation)
+Parser.py:173:0: C0301: Line too long (101/100) (line-too-long)
+Parser.py:186:0: C0301: Line too long (101/100) (line-too-long)
+Parser.py:187:0: C0301: Line too long (112/100) (line-too-long)
+Parser.py:192:0: C0301: Line too long (113/100) (line-too-long)
+Parser.py:195:0: C0301: Line too long (113/100) (line-too-long)
+Parser.py:197:0: C0301: Line too long (112/100) (line-too-long)
+Parser.py:202:0: C0301: Line too long (113/100) (line-too-long)
+Parser.py:1:0: C0103: Module name "Parser" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+Parser.py:5:0: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:25:8: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:30:0: R0914: Too many local variables (23/15) (too-many-locals)
+Parser.py:76:8: C0103: Variable name "String1" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:89:19: R1714: Consider merging these comparisons with "in" to 'field in (6, 7, 8, 9, 10)' (consider-using-in)
+Parser.py:90:19: C0103: Variable name "String1" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:92:20: C0103: Variable name "String1" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:118:19: R0916: Too many boolean expressions in if statement (6/5) (too-many-boolean-expressions)
+Parser.py:118:19: R1714: Consider merging these comparisons with "in" to 'field in (6, 7, 8, 9, 10, 12)' (consider-using-in)
+Parser.py:119:20: C0103: Variable name "String1" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:121:20: C0103: Variable name "String1" doesn't conform to snake_case naming style (invalid-name)
+Parser.py:30:0: R0912: Too many branches (15/12) (too-many-branches)
+Parser.py:30:0: R0915: Too many statements (97/50) (too-many-statements)
+Parser.py:1:0: W0611: Unused import sys (unused-import)
+
+------------------------------------------------------------------
+Your code has been rated at 6.40/10 (previous run: 6.04/10, +0.36)
+
